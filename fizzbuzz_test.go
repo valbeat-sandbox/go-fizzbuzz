@@ -18,7 +18,7 @@ var fizzBuzzTests = []fizzBuzzTest{
 	fizzBuzzTest{15,"FizzBuzz"},
 }
 
-func TestFizzBuzz(t *testing.T) {
+func TestToFizzBuzz(t *testing.T) {
 	for _, fbt := range fizzBuzzTests {
 		res := ToFizzBuzz(fbt.in)
 		if res != fbt.out {
