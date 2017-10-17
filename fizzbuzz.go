@@ -12,13 +12,14 @@ func SayFizzBuzz() {
 }
 
 func ToFizzBuzz(amount int) string {
-	if amount%15 == 0 {
+	switch {
+	case amount%15 == 0:
 		return "FizzBuzz"
-	} else if amount%3 == 0 {
+	case amount%3 == 0:
 		return "Fizz"
-	} else if amount%5 == 0 {
+	case amount%5 == 0:
 		return "Buzz"
-	} else {
+	default:
 		return strconv.Itoa(amount)
 	}
 }
